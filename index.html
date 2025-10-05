@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rahul Satav • Senior Full Stack Developer</title>
+  <meta name="description" content="Portfolio website of Rahul Satav — Senior Full Stack Developer specializing in Java, Spring Boot, Angular, React, SQL, and AWS."/>
+  <link rel="icon" href="favicon.ico">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+  <style>
+    body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; color:#0f172a; }
+  </style>
+</head>
+<body class="bg-white">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-extrabold text-xl text-slate-900">RS<span class="text-blue-700">.</span></a>
+      <nav class="hidden md:flex gap-8 text-sm font-medium">
+        <a class="hover:text-blue-700 link-underline" href="#about">About</a>
+        <a class="hover:text-blue-700 link-underline" href="#skills">Skills</a>
+        <a class="hover:text-blue-700 link-underline" href="#experience">Experience</a>
+        <a class="hover:text-blue-700 link-underline" href="#projects">Projects</a>
+        <a class="hover:text-blue-700 link-underline" href="#contact">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="Rahul_Satav_Resume.pdf" class="btn-primary text-sm">Download Resume</a>
+        <a href="https://www.linkedin.com/in/rahul-satav" class="text-blue-700 font-semibold hover:opacity-80" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <button id="navToggle" class="md:hidden inline-flex items-center p-2 rounded-lg hover:bg-slate-100" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100 bg-white">
+      <div class="px-4 py-3 flex flex-col gap-3">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="Rahul_Satav_Resume.pdf" class="btn-primary w-full text-center">Download Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-gradient section">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-slate-900">
+          Rahul Satav
+        </h1>
+        <p class="mt-3 text-xl text-slate-600">
+          Senior Full Stack Developer — Java • Spring Boot • Angular • React • SQL • AWS
+        </p>
+        <p class="mt-4 text-slate-600">
+          I build scalable, secure enterprise applications and microservices that turn business goals into shipped, high‑quality software.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a class="btn-primary" href="#contact">Contact Me</a>
+          <a class="px-4 py-3 rounded-xl border border-slate-200 hover:bg-slate-50" href="Rahul_Satav_Cover_Letter.pdf">Cover Letter</a>
+        </div>
+        <div class="mt-6 flex items-center gap-4">
+          <a href="https://www.linkedin.com/in/rahul-satav" target="_blank" rel="noopener" class="text-slate-600 hover:text-blue-700">LinkedIn</a>
+          <a href="mailto:rahulsatav5062@gmail.com" class="text-slate-600 hover:text-blue-700">Email</a>
+          <a href="https://github.com/" target="_blank" rel="noopener" class="text-slate-600 hover:text-blue-700">GitHub</a>
+        </div>
+      </div>
+      <div class="reveal flex justify-center md:justify-end">
+        <img src="assets/profile-512.jpg" alt="Rahul Satav profile photo" class="w-56 h-56 rounded-2xl object-cover shadow-soft border border-slate-200">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
+      <div class="reveal">
+        <h2 class="text-2xl font-bold">About</h2>
+        <p class="mt-3 text-slate-600 leading-relaxed">
+          Full‑stack engineer with 4.5+ years building enterprise products across insurance and finance. 
+          Comfortable owning end‑to‑end delivery: backend services, performant UIs, databases, and cloud infrastructure. 
+          I care about code quality, reliability, and measurable business outcomes.
+        </p>
+        <div class="mt-4 p-4 card shadow-soft">
+          <p class="text-slate-700"><strong>Highlights:</strong></p>
+          <ul class="mt-2 list-disc ml-5 space-y-1 text-slate-600">
+            <li>20% revenue growth by delivering new insurance features at Cognizant.</li>
+            <li>30% application performance improvement via tuning and fixes.</li>
+            <li>Mentored 6+ engineers, improving team productivity by 25%.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="reveal">
+        <h3 class="text-xl font-semibold">Quick Info</h3>
+        <div class="mt-3 grid grid-cols-2 gap-3 text-slate-600">
+          <div><small class="muted">Location</small><div>Pune, India</div></div>
+          <div><small class="muted">Experience</small><div>4.5+ years</div></div>
+          <div><small class="muted">Email</small><div><a class="link-underline" href="mailto:rahulsatav5062@gmail.com">rahulsatav5062@gmail.com</a></div></div>
+          <div><small class="muted">LinkedIn</small><div><a class="link-underline" href="https://www.linkedin.com/in/rahul-satav" target="_blank">/in/rahul-satav</a></div></div>
+        </div>
+        <div class="mt-6 p-5 card shadow-soft">
+          <p class="text-slate-700 font-medium">Core Stack</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="badge">Java</span><span class="badge">Spring Boot</span><span class="badge">Angular</span>
+            <span class="badge">React</span><span class="badge">SQL</span><span class="badge">AWS</span>
+            <span class="badge">Microservices</span><span class="badge">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-slate-50 section">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold reveal">Skills</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <div class="p-5 card bg-white shadow-soft reveal">
+          <h3 class="font-semibold text-slate-900">Frontend</h3>
+          <p class="text-slate-600 mt-2">Angular, React, HTML5, CSS3, TypeScript, Responsive UI</p>
+        </div>
+        <div class="p-5 card bg-white shadow-soft reveal">
+          <h3 class="font-semibold text-slate-900">Backend</h3>
+          <p class="text-slate-600 mt-2">Java, Spring Boot, .NET Core, REST APIs, Microservices</p>
+        </div>
+        <div class="p-5 card bg-white shadow-soft reveal">
+          <h3 class="font-semibold text-slate-900">Cloud & DevOps</h3>
+          <p class="text-slate-600 mt-2">AWS, Docker, Kubernetes, Git, CI/CD (Jenkins/GitLab)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold reveal">Experience</h2>
+      <div class="relative mt-6 timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="p-5 card shadow-soft">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <h3 class="font-semibold">Senior Full Stack Developer — Cognizant</h3>
+              <span class="text-sm text-slate-500">Oct 2023 – Present • Pune</span>
+            </div>
+            <ul class="mt-3 list-disc ml-5 space-y-1 text-slate-600">
+              <li>Led insurance features with Java & Angular; drove 20% revenue growth.</li>
+              <li>Improved stability & performance by 30% via tuning and fixes.</li>
+              <li>Delivered SDLC initiatives on time with high quality; mentored 6+ engineers.</li>
+              <li>Championed Agile; reduced sprint cycles by 15%.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="p-5 card shadow-soft">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <h3 class="font-semibold">Software Developer — SS&C FinTech</h3>
+              <span class="text-sm text-slate-500">Sep 2021 – Oct 2023 • Pune</span>
+            </div>
+            <ul class="mt-3 list-disc ml-5 space-y-1 text-slate-600">
+              <li>Built scalable apps with Java, Spring Boot, .NET Core Microservices.</li>
+              <li>Reduced SQL response times by 35%; uptime +25%.</li>
+              <li>Shipped analytics dashboard: automated reporting, 40% manual effort saved.</li>
+              <li>Improved collaboration & delivery with Agile and CI/CD.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-slate-50 section">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold reveal">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-6 mt-6">
+        <article class="p-5 card bg-white shadow-soft reveal">
+          <h3 class="font-semibold">Insurance Claim Management System</h3>
+          <p class="text-slate-600 mt-2">Full‑stack portal using Java, Spring Boot, Angular, and SQL with secure auth and real‑time updates.</p>
+          <ul class="list-disc ml-5 mt-2 text-slate-600 space-y-1">
+            <li>Performance +25%, claim processing time −30%.</li>
+            <li>Supported ~500 active users efficiently.</li>
+          </ul>
+        </article>
+        <article class="p-5 card bg-white shadow-soft reveal">
+          <h3 class="font-semibold">Financial Analytics & Reporting Dashboard</h3>
+          <p class="text-slate-600 mt-2">Enterprise dashboard (.NET Core, Angular, SQL) with role‑based views and real‑time insights.</p>
+          <ul class="list-disc ml-5 mt-2 text-slate-600 space-y-1">
+            <li>Decision‑making efficiency +30%.</li>
+            <li>Manual reporting time −40% via automation.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Awards -->
+  <section class="section">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-6">
+      <div class="p-5 card shadow-soft reveal">
+        <h3 class="font-semibold">Certifications</h3>
+        <ul class="mt-3 list-disc ml-5 text-slate-600 space-y-1">
+          <li>Oracle Certified Associate, Java SE Programmer (2023)</li>
+          <li>AWS Certified Developer – Associate (2023)</li>
+          <li>Scrum Professional Certification (2024)</li>
+          <li>Angular Developer Certification (2025)</li>
+          <li>Git Complete — Udemy (2025)</li>
+        </ul>
+      </div>
+      <div class="p-5 card shadow-soft reveal">
+        <h3 class="font-semibold">Awards</h3>
+        <ul class="mt-3 list-disc ml-5 text-slate-600 space-y-1">
+          <li>Delivery Excellence Award — Cognizant (2025)</li>
+          <li>Delivery Excellence Award — SS&C FinTech (2023)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="bg-slate-50 section">
+    <div class="max-w-6xl mx-auto px-4 reveal">
+      <h2 class="text-2xl font-bold">Education</h2>
+      <div class="mt-4 p-5 card bg-white shadow-soft">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <p class="font-semibold">B.E. Computer Engineering — PCCOE, Pune</p>
+          <span class="text-sm text-slate-500">2018 – 2022 • 82%</span>
+        </div>
+        <p class="text-slate-600 mt-2">Coursework: DSA, OOP in Java, DBMS & SQL, Web Tech, Full‑Stack Dev, Microservices, AWS, Agile.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+      <div class="reveal">
+        <h2 class="text-2xl font-bold">Let’s build something great</h2>
+        <p class="text-slate-600 mt-2">Prefer email? Click the button and it will open your mail client with a pre‑filled subject.</p>
+        <a class="btn-primary mt-4 inline-block" href="mailto:rahulsatav5062@gmail.com?subject=Opportunity%20for%20Senior%20Full%20Stack%20Developer&body=Hi%20Rahul,%20we%27d%20like%20to%20connect%20about%20...">Email Rahul</a>
+        <p class="text-slate-500 text-sm mt-3">Alternatively, connect on <a class="link-underline" href="https://www.linkedin.com/in/rahul-satav" target="_blank">LinkedIn</a>.</p>
+      </div>
+      <div class="reveal p-5 card shadow-soft">
+        <form action="mailto:rahulsatav5062@gmail.com" method="post" enctype="text/plain">
+          <div class="grid grid-cols-1 gap-4">
+            <div>
+              <label class="text-sm text-slate-600">Your Name</label>
+              <input type="text" name="Name" required>
+            </div>
+            <div>
+              <label class="text-sm text-slate-600">Your Email</label>
+              <input type="email" name="Email" required>
+            </div>
+            <div>
+              <label class="text-sm text-slate-600">Message</label>
+              <textarea rows="5" name="Message" required></textarea>
+            </div>
+            <button class="btn-primary w-full" type="submit">Send</button>
+            <small class="text-slate-500">This uses your email client for GitHub Pages compatibility.</small>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 border-t border-slate-100">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="text-sm text-slate-500">&copy; <span id="year"></span> Rahul Satav. All rights reserved.</p>
+      <div class="flex items-center gap-5 text-sm">
+        <a class="link-underline" href="Rahul_Satav_Resume.pdf">Resume</a>
+        <a class="link-underline" href="Rahul_Satav_Cover_Letter.pdf">Cover Letter</a>
+        <a class="link-underline" href="https://www.linkedin.com/in/rahul-satav" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

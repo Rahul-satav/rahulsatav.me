@@ -1,0 +1,60 @@
+
+/* Custom additions on top of Tailwind for refined corporate look */
+:root{
+  --brand:#1d4ed8; /* blue-700 */
+  --brand-600:#2563eb;
+  --brand-50:#eff6ff;
+  --ink:#0f172a; /* slate-900 */
+}
+html{scroll-behavior:smooth;}
+/* nicer underline for links */
+.link-underline{
+  background-image: linear-gradient(transparent, transparent), linear-gradient(var(--brand), var(--brand));
+  background-size: 0 2px, 100% 2px;
+  background-position: 0 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .3s ease;
+}
+.link-underline:hover { background-size: 100% 2px, 100% 2px; }
+.glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,.7);
+}
+/* Simple fade/slide animations */
+.reveal { opacity: 0; transform: translateY(18px); transition: all .7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.shadow-soft { box-shadow: 0 10px 30px rgba(2,6,23,.08); }
+.card {
+  border-radius: 1rem;
+  border: 1px solid rgba(2,6,23,.06);
+}
+/* Timeline */
+.timeline:before{
+  content:"";
+  position:absolute;left:1rem;top:0;bottom:0;width:2px;
+  background: linear-gradient(var(--brand-600), rgba(37,99,235,.2));
+}
+.timeline-item{position:relative;padding-left:3rem;}
+.timeline-dot{
+  position:absolute;left:0.9rem;top:.35rem;width:.75rem;height:.75rem;border-radius:9999px;background:var(--brand);
+  box-shadow:0 0 0 4px var(--brand-50);
+}
+/* Buttons */
+.btn-primary{
+  background:var(--brand);color:#fff;border-radius:.75rem;padding:.75rem 1.1rem;
+  transition:transform .15s ease, box-shadow .2s ease, background .2s ease;
+  box-shadow:0 8px 20px rgba(37,99,235,.25);
+}
+.btn-primary:hover{ background:var(--brand-600); transform: translateY(-1px); }
+.section { padding-top: 4rem; padding-bottom: 4rem; }
+.hero-gradient{
+  background: radial-gradient(70% 60% at 50% 0%, var(--brand-50) 0%, transparent 60%);
+}
+.badge{border:1px solid rgba(29,78,216,.25); padding:.35rem .6rem; border-radius:9999px; font-size:.9rem; background:#fff;}
+small.muted{color:#475569;}
+/* Contact form */
+input, textarea{
+  border:1px solid #e2e8f0;border-radius:.75rem;padding:.75rem 1rem; width:100%;
+}
+input:focus, textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 .25rem rgba(37,99,235,.15)}
+footer a{opacity:.9}

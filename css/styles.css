@@ -1,0 +1,19 @@
+:root{--brand:#1d4ed8;--brand-600:#2563eb;--brand-50:#eff6ff;--ink:#0f172a}
+html{scroll-behavior:smooth}body{color:#0f172a}
+.link-underline{background-image:linear-gradient(transparent,transparent),linear-gradient(var(--brand),var(--brand));background-size:0 2px,100% 2px;background-position:0 100%,0 100%;background-repeat:no-repeat;transition:background-size .3s}
+.link-underline:hover{background-size:100% 2px,100% 2px}
+.reveal{opacity:0;transform:translateY(18px);transition:all .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+.shadow-soft{box-shadow:0 10px 30px rgba(2,6,23,.08)}.card{border-radius:1rem;border:1px solid rgba(2,6,23,.06)}
+.timeline:before{content:"";position:absolute;left:1rem;top:0;bottom:0;width:2px;background:linear-gradient(var(--brand-600),rgba(37,99,235,.2))}
+.timeline-item{position:relative;padding-left:3rem}.timeline-dot{position:absolute;left:.9rem;top:.35rem;width:.75rem;height:.75rem;border-radius:9999px;background:var(--brand);box-shadow:0 0 0 4px var(--brand-50)}
+.btn-primary{background:var(--brand);color:#fff;border-radius:.75rem;padding:.75rem 1.1rem;transition:transform .15s,box-shadow .2s,background .2s;box-shadow:0 8px 20px rgba(37,99,235,.25)}
+.btn-primary:hover{background:var(--brand-600);transform:translateY(-1px)}
+.section{padding-top:4rem;padding-bottom:4rem}.hero-gradient{background:radial-gradient(70% 60% at 50% 0%,var(--brand-50) 0,transparent 60%)}
+.badge{border:1px solid rgba(29,78,216,.25);padding:.35rem .6rem;border-radius:9999px;font-size:.9rem;background:#fff}
+small.muted{color:#475569}
+input,textarea{border:1px solid #e2e8f0;border-radius:.75rem;padding:.75rem 1rem;width:100%}
+input:focus,textarea:focus{outline:none;border-color:var(--brand);box-shadow:0 0 0 .25rem rgba(37,99,235,.15)}
+footer a{opacity:.9}
+.dark body{color:#e2e8f0}.dark .card{border-color:rgba(255,255,255,.12);background:#0b1220}.dark .hero-gradient{background:radial-gradient(70% 60% at 50% 0%,#0b1a37 0,transparent 60%)}
+.dark header,.dark footer{background:#0b1220bd;border-color:#0f172a}
+.dark a{color:#93c5fd}.dark .badge{background:#0b1220;border-color:#1d4ed8}
